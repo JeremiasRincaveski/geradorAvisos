@@ -67,14 +67,36 @@ button {
   bottom: -35px;
   border: none;
   background-color: var(--neonGreen);
-  padding: 1.3rem;
+  width: 4rem;
+  height: 4rem;
   border-radius: 50%;
   align-self: center;
+  transition: all 3s;
 }
 
 button:hover {
   cursor: pointer;
   box-shadow: 0px 0px 40px var(--neonGreen);
+}
+
+.giro {
+  animation-name: girar;
+  animation-duration: 3s;
+}
+
+@keyframes girar {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+button:disabled {
+  background-color: var(--grayishBlue);
+  cursor: not-allowed;
+  box-shadow: none;
 }
 
 .attribution {
