@@ -64,10 +64,10 @@ section > img {
 
 button {
   position: absolute;
-  bottom: -40px;
+  bottom: -35px;
   border: none;
   background-color: var(--neonGreen);
-  padding: 1rem;
+  padding: 1.3rem;
   border-radius: 50%;
   align-self: center;
 }
