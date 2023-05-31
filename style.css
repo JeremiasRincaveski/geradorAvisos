@@ -30,7 +30,8 @@ body {
 section {
   background-color: var(--darkGrayishBlue);
   width: 550px;
-  height: 340px;
+  max-width: 95vw;
+  height: max-content;
   text-align: center;
   align-items: center;
   border-radius: 10px;
@@ -38,6 +39,7 @@ section {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  position: relative;
 }
 
 .id {
@@ -55,12 +57,14 @@ section {
   color: var(--lightCyan);
 }
 
-section img {
+section > img {
   margin: .5rem;
+  width: 100%;
 }
 
 button {
-  margin-top: 1.5rem;
+  position: absolute;
+  bottom: -40px;
   border: none;
   background-color: var(--neonGreen);
   padding: 1rem;
@@ -74,6 +78,11 @@ button:hover {
 }
 
 .attribution {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
   position: absolute;
   bottom: 10px;
   color: var(--lightCyan);
